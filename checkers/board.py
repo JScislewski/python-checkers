@@ -14,7 +14,8 @@ class Board:
     def draw_squares(self, window):
         window.fill(BEIGE)
         for row in range(ROWS):
-            for col in range(row % 2, COLS, 2):
+            first_square = 0 if row % 2 != 0 else 1
+            for col in range(first_square, COLS, 2):
                 pygame.draw.rect(
                     window,
                     BROWN,
