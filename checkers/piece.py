@@ -18,3 +18,6 @@ class Piece:
     def calc_pos(self):
         self.x = SQUARE_SIZE * self.col + SQUARE_SIZE // 2
         self.y = SQUARE_SIZE * self.row + SQUARE_SIZE // 2
+
+    def make_king(self):
+        self.king = True
