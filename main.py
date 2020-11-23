@@ -1,5 +1,6 @@
 import pygame
 from checkers.constants import WIDTH, HEIGHT
+from checkers.board import Board
 
 FPS = 60
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -12,6 +13,7 @@ def main():
 
     while run:
         clock.tick(FPS)
+        board = Board()
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -20,6 +22,8 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pass
 
+        board.draw_squares(WIN)
+        pygame.display.update()
     pygame.quit()
 
 
