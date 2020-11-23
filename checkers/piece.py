@@ -1,4 +1,5 @@
 from .constants import BLACK, GREY, SQUARE_SIZE, WHITE
+import pygame
 
 
 class Piece:
