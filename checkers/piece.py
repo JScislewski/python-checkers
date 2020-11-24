@@ -4,7 +4,7 @@ import pygame
 
 class Piece:
     PADDING = 10
-    OUTLINE = 2
+    OUTLINE = 1
 
     def __init__(self, row, col, color):
         self.row = row
