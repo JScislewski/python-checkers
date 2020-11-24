@@ -3,7 +3,7 @@ import pygame
 
 
 class Piece:
-    PADDING = 20
+    PADDING = 15
     OUTLINE = 1
 
     def __init__(self, row, col, color):
@@ -38,7 +38,7 @@ class Piece:
                 CROWN,
                 (
                     self.x - CROWN.get_width() // 2,
-                    self.y - CROWN.get_height() - 19,
+                    self.y - CROWN.get_height() - 23,
                 ),
             )
 
